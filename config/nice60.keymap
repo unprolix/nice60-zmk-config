@@ -95,6 +95,36 @@
             #binding-cells = <0>;
             unicode = <0x1F600>;
         };
+        heart_eyes: heart_eyes_emoji {
+            compatible = "zmk,behavior-unicode";
+            label = "HEART_EYES_EMOJI";
+            #binding-cells = <0>;
+            unicode = <0x1F60D>;
+        };
+        heart: heart_emoji {
+            compatible = "zmk,behavior-unicode";
+            label = "HEART_EMOJI";
+            #binding-cells = <0>;
+            unicode = <0x2764>;
+        };
+        kiss: kiss_emoji {
+            compatible = "zmk,behavior-unicode";
+            label = "KISS_EMOJI";
+            #binding-cells = <0>;
+            unicode = <0x1F618>;
+        };
+        love: love_emoji {
+            compatible = "zmk,behavior-unicode";
+            label = "LOVE_EMOJI";
+            #binding-cells = <0>;
+            unicode = <0x1F970>;
+        };
+        brain: brain_emoji {
+            compatible = "zmk,behavior-unicode";
+            label = "BRAIN_EMOJI";
+            #binding-cells = <0>;
+            unicode = <0x1F9E0>;
+        };
     };
 
     combos {
@@ -178,8 +208,8 @@
         extras_layer {
             bindings = <
                 &trans     &trans     &trans     &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
-                &kp EMOJI_HEART_EYES &trans &trans &trans      &trans      &trans          &kp EMOJI_HEART &trans &kp EMOJI_KISS &kp EMOJI_LOVE &trans      &trans
-                &trans     &trans     &trans     &trans      &trans      &kp EMOJI_BRAIN &trans      &trans      &trans      &trans      &trans      &trans
+                &heart_eyes &trans &trans &trans      &trans      &trans          &heart &trans &kiss &love &trans      &trans
+                &trans     &trans     &trans     &trans      &trans      &brain &trans      &trans      &trans      &trans      &trans      &trans
                                                  &trans      &trans      &trans          &trans      &trans      &trans
             >;
         };
@@ -188,7 +218,7 @@
         func_layer {
             bindings = <
                 &kp F1     &kp F2     &kp F3     &kp F4      &kp F5      &kp F6          &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-                &kp EMOJI_GRIN &trans  &trans     &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+                &grin &trans  &trans     &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
                 &trans     &trans     &trans     &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
                                                  &trans      &trans      &trans          &trans      &trans      &trans
             >;
