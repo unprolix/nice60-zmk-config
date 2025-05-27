@@ -150,9 +150,9 @@
         // NAVIGATION layer (1)
         nav_layer {
             bindings = <
-                &kp HOME   &kp PG_UP  &kp INS    &kp UP      &kp DEL     &trans          &kp INS     &kp UP      &kp DEL     &kp PG_UP   &kp HOME    &trans
-                &to BASE   &hml LCTRL PG_DN &hml LALT LEFT &hml LSHFT DOWN &hml LGUI RIGHT &trans    &trans      &hmr RGUI LEFT &hmr RSHFT DOWN &hmr RALT RIGHT &hmr RCTRL PG_DN &to BASE
-                &trans     &kp EMOJI_GRIN &trans &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+                &kp HOME   &kp PG_UP  &kp INS    &kp UP      &kp DEL     &trans
+                &to BASE   &hml LCTRL &kp PG_DN &hml LALT &kp LEFT &hml LSHFT &kp DOWN &hml LGUI &kp RIGHT &trans
+                &trans     &kp EMOJI_GRIN &trans &trans      &trans      &trans
                                                  &trans      &trans      &to BASE        &to BASE    &trans      &trans
             >;
         };
