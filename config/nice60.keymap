@@ -88,6 +88,13 @@
             tapping-term-ms = <HOLD_TERM_MS>;
             quick-tap-ms = <QUICK_TAP_MS>;
         };
+
+        grin: grin_emoji {
+            compatible = "zmk,behavior-unicode";
+            label = "GRIN_EMOJI";
+            #binding-cells = <0>;
+            unicode = <0x1F600>;
+        };
     };
 
     combos {
@@ -152,7 +159,7 @@
             bindings = <
                 &kp HOME   &kp PG_UP  &kp INS    &kp UP      &kp DEL     &trans
                 &to BASE   &hml LCTRL &kp PG_DN &hml LALT &kp LEFT &hml LSHFT &kp DOWN &hml LGUI &kp RIGHT &trans
-                &trans     &kp EMOJI_GRIN &trans &trans      &trans      &trans
+                &trans     &grin &trans &trans      &trans      &trans
                                                  &trans      &trans      &to BASE        &to BASE    &trans      &trans
             >;
         };
